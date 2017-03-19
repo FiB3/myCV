@@ -348,6 +348,10 @@ p {
       padding: 0px;
     }
 
+    .footer p {
+      margin-bottom: 0px;
+    }
+
     .sidebar-wrapper {
         padding-right: 0px;
         padding-right: 0px;
