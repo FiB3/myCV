@@ -18,13 +18,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.printer{
-    float: right;
-    margin: 0px;
-    position: relative;;
-    left: 40px;
-}
-
 h1,
 h2,
 h3,
@@ -313,6 +306,31 @@ p {
     top: 1px;
   }
 }
+
+.printer{
+    margin: 0px;
+}
+
+@media (max-width: 992px) {
+    /*For smaller screens:*/
+    .printer{
+        position: fixed;
+        right: 0px;
+        top: 90px;
+    }
+}
+
+@media (min-width: 992px) {
+    /*For large screens:*/
+    .printer{
+        position: fixed;
+        /*right: 0px;*/
+        top: 90px;
+        right: calc(50% - 496px - 20px);
+        /*transform: translate(, 0);*/
+    }
+}
+
 /* Large devices (large desktops, 1200px and up) */
 /* Ex-Large devices (large desktops, 1200px and up) */
 @media print {
